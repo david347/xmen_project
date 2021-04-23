@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5435/database
+    username: postgres
+    password: smart
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      generate-ddl: true #pass to false for production
+    show-sql: true
