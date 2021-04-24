@@ -23,6 +23,11 @@ import io.swagger.annotations.ApiResponses;
 
 import org.springframework.web.bind.annotation.RequestBody;
 
+/**
+ * Main api controller
+ * @author David.Garay
+ *
+ */
 @RestController
 @Api(tags="DNA")
 public class DNAController {

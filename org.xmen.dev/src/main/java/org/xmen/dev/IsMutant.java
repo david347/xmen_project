@@ -1,5 +1,10 @@
 package org.xmen.dev;
 
+/**
+ * first version of algorithm to evaluate an DNA and define if is a mutant
+ * @author David.Garay
+ *
+ */
 public class IsMutant implements DNAEvaluation {
 	
 	public boolean execute(String[] dna) {
@@ -13,7 +18,7 @@ public class IsMutant implements DNAEvaluation {
 		return false;
 	}
 	
-	public Boolean isMutant(String[] dna, int x, int y) {
+	private Boolean isMutant(String[] dna, int x, int y) {
 		char ref = dna[y].charAt(x);
 		if(!"ATCG".contains(""+ref))
 			return null;

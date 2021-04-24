@@ -7,6 +7,7 @@ import org.xmen.dev.IsMutant;
 
 public class IsMutantTest {
 
+	DNAEvaluation comand = new IsMutant();
 	@Test
 	public void isMutantUpToRight() {
 		String[] dna5x5 = {
@@ -24,8 +25,8 @@ public class IsMutantTest {
 				"CCTCAAC",
 				"CCTCGAC",
 				"TCACTGC"};
-		assertEquals(true, new IsMutant().execute(dna5x5));
-		assertEquals(true, new IsMutant().execute(dna6x6));
+		assertEquals(true, comand.execute(dna5x5));
+		assertEquals(true, comand.execute(dna6x6));
 	}
 
 	@Test
@@ -33,7 +34,7 @@ public class IsMutantTest {
 		String[] dna5x5 = {
 				"ATGCGA",
 				"CAGTGC",
-				"TTCTGT",
+				"TTATGT",
 				"AGTATG",
 				"CTTCTA",
 				"TCACTG"};
@@ -45,8 +46,8 @@ public class IsMutantTest {
 				"CCTTAAC",
 				"CCTCGAC",
 				"TCACTGC"};
-		assertEquals(true, new IsMutant().execute(dna5x5));
-		assertEquals(true, new IsMutant().execute(dna6x6));
+		assertEquals(true, comand.execute(dna5x5));
+		assertEquals(true, comand.execute(dna6x6));
 	}
 	
 	@Test
@@ -66,8 +67,8 @@ public class IsMutantTest {
 				"CCAAAAC",
 				"CCTCGAC",
 				"TCACTGC"};
-		assertEquals(true, new IsMutant().execute(dna5x5));
-		assertEquals(true, new IsMutant().execute(dna6x6));
+		assertEquals(true, comand.execute(dna5x5));
+		assertEquals(true, comand.execute(dna6x6));
 	}
 	
 	@Test
@@ -87,8 +88,8 @@ public class IsMutantTest {
 				"CCAAACC",
 				"CCTCGCA",
 				"TCACTGC"};
-		assertEquals(true, new IsMutant().execute(dna5x5));
-		assertEquals(true, new IsMutant().execute(dna6x6));
+		assertEquals(true, comand.execute(dna5x5));
+		assertEquals(true, comand.execute(dna6x6));
 	}
 	
 	@Test
@@ -108,7 +109,7 @@ public class IsMutantTest {
 				"CCAGACC",
 				"CCTCGCA",
 				"TCACTGC"};
-		assertEquals(false, new IsMutant().execute(dna5x5));
-		assertEquals(false, new IsMutant().execute(dna6x6));
+		assertEquals(false, comand.execute(dna5x5));
+		assertEquals(false, comand.execute(dna6x6));
 	}
 }

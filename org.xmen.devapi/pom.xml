@@ -11,7 +11,7 @@
 	<groupId>org.xmen</groupId>
 	<artifactId>org.xmen.devapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>org.meli.devapi</name>
+	<name>org.xmen.devapi</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>8</java.version>
