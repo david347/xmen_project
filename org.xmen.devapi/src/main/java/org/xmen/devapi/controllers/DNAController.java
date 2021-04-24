@@ -2,7 +2,6 @@ package org.xmen.devapi.controllers;
 
 import java.util.Arrays;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,12 +14,10 @@ import org.xmen.devapi.models.DNARequest;
 import org.xmen.devapi.models.DNASample;
 import org.xmen.devapi.models.StatsResponse;
 import org.xmen.devapi.services.DNAService;
-
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-
 import org.springframework.web.bind.annotation.RequestBody;
 
 /**

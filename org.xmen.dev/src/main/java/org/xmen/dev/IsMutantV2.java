@@ -1,7 +1,5 @@
 package org.xmen.dev;
 
-import com.sun.javafx.fxml.expression.BinaryExpression;
-
 /**
  * only support 8x8 matrix
  * @author David.Garay
